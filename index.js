@@ -12,7 +12,8 @@ class Calculator {
 
   //methods
   ration(x, y, width) {
-    return `height is --- on ratio ${x}:${y}`;
+    const height = (y * width) / x;
+    return `height is ${this.heights} on ratio ${x}:${y}`;
   }
   percentage(x, y) {
     return (x / y) * 100;
@@ -21,7 +22,7 @@ class Calculator {
     return x + y;
   }
   subtract(x, y) {
-    return x - y;
+    return y - x;
   }
   multiply(x, y) {
     return x * y;
@@ -43,9 +44,10 @@ class Calculator {
 const calculate = new Calculator();
 console.log(calculate.e);
 console.log(calculate.pi);
-console.log(calculate.subtract(6, 4));
+console.log(calculate.subtract(5, 7));
+console.log(calculate.ration(5, 7, 300));
 console.log(calculate.multiply(6, 4));
 console.log(calculate.divide(6, 4));
 console.log(calculate.modulation(6, 4));
-console.log(calculate.elevate(6, 4));
-console.log(calculate.sqrt(7));
+console.log(calculate.elevate(5, 3));
+console.log(calculate.sqrt(25));
