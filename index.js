@@ -13,7 +13,7 @@ class Calculator {
   //methods
   ration(x, y, width) {
     const height = (y * width) / x;
-    return `height is ${this.heights} on ratio ${x}:${y}`;
+    return `height is ${height} on ratio ${x}:${y}`;
   }
   percentage(x, y) {
     return (x / y) * 100;
